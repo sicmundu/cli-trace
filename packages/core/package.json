@@ -12,10 +12,8 @@
       "require": "./dist/index.js"
     }
   },
-    "files": [
-  "publishConfig": {
-    "access": "public"
-  },    "dist"
+  "files": [
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
