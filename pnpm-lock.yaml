@@ -26,21 +26,21 @@ importers:
 
   apps/cli:
     dependencies:
-      '@cli-trace/core':
-        specifier: workspace:*
-        version: link:../../packages/core
-      '@cli-trace/parser-svg':
-        specifier: workspace:*
-        version: link:../../packages/parser-svg
-      '@cli-trace/renderer-tty':
-        specifier: workspace:*
-        version: link:../../packages/renderer-tty
-      '@cli-trace/renderer-web':
-        specifier: workspace:*
-        version: link:../../packages/renderer-web
       chalk:
         specifier: ^5.0.0
         version: 5.6.0
+      cli-trace-core:
+        specifier: workspace:*
+        version: link:../../packages/core
+      cli-trace-parser-svg:
+        specifier: workspace:*
+        version: link:../../packages/parser-svg
+      cli-trace-renderer-tty:
+        specifier: workspace:*
+        version: link:../../packages/renderer-tty
+      cli-trace-renderer-web:
+        specifier: workspace:*
+        version: link:../../packages/renderer-web
       commander:
         specifier: ^11.0.0
         version: 11.1.0
@@ -69,16 +69,16 @@ importers:
 
   apps/demo-site:
     dependencies:
-      '@cli-trace/core':
+      cli-trace-core:
         specifier: workspace:*
         version: link:../../packages/core
-      '@cli-trace/parser-svg':
+      cli-trace-parser-svg:
         specifier: workspace:*
         version: link:../../packages/parser-svg
-      '@cli-trace/renderer-react':
+      cli-trace-renderer-react:
         specifier: workspace:*
         version: link:../../packages/renderer-react
-      '@cli-trace/renderer-web':
+      cli-trace-renderer-web:
         specifier: workspace:*
         version: link:../../packages/renderer-web
       react:
@@ -136,7 +136,7 @@ importers:
 
   packages/parser-svg:
     dependencies:
-      '@cli-trace/core':
+      cli-trace-core:
         specifier: workspace:*
         version: link:../core
     devDependencies:
@@ -155,13 +155,13 @@ importers:
 
   packages/renderer-react:
     dependencies:
-      '@cli-trace/core':
+      cli-trace-core:
         specifier: workspace:*
         version: link:../core
-      '@cli-trace/parser-svg':
+      cli-trace-parser-svg:
         specifier: workspace:*
         version: link:../parser-svg
-      '@cli-trace/renderer-web':
+      cli-trace-renderer-web:
         specifier: workspace:*
         version: link:../renderer-web
       react:
@@ -192,10 +192,10 @@ importers:
 
   packages/renderer-tty:
     dependencies:
-      '@cli-trace/core':
+      cli-trace-core:
         specifier: workspace:*
         version: link:../core
-      '@cli-trace/parser-svg':
+      cli-trace-parser-svg:
         specifier: workspace:*
         version: link:../parser-svg
     devDependencies:
@@ -214,10 +214,10 @@ importers:
 
   packages/renderer-web:
     dependencies:
-      '@cli-trace/core':
+      cli-trace-core:
         specifier: workspace:*
         version: link:../core
-      '@cli-trace/parser-svg':
+      cli-trace-parser-svg:
         specifier: workspace:*
         version: link:../parser-svg
     devDependencies:
