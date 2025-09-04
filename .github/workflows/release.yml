@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -28,7 +30,12 @@ jobs:
       - name: Build packages
         run: pnpm run build
 
+      - name: Setup git branch
+        run: |
+          git checkout main || git checkout master
+          git status
+
       - name: Publish packages
-        run: pnpm -r publish --access public
+        run: pnpm -r publish --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
