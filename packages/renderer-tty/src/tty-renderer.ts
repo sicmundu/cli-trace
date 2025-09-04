@@ -10,8 +10,8 @@ import {
   PathData,
   Point,
   applyEasing
-} from '@cli-trace/core';
-import { createPathData } from '@cli-trace/parser-svg';
+} from 'cli-trace-core';
+import { createPathData } from 'cli-trace-parser-svg';
 import {
   TerminalCapabilities,
   detectTerminalCapabilities,

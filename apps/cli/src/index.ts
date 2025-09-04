@@ -8,9 +8,9 @@ import { Command } from 'commander';
 import chalk from 'chalk';
 import fs from 'fs-extra';
 import path from 'path';
-import { ttyTrace } from '@cli-trace/renderer-tty';
-import { SVGRenderer, createSvgTracer } from '@cli-trace/renderer-web';
-import { TraceSource } from '@cli-trace/core';
+import { ttyTrace } from 'cli-trace-renderer-tty';
+import { SVGRenderer, createSvgTracer } from 'cli-trace-renderer-web';
+import { TraceSource } from 'cli-trace-core';
 
 const program = new Command();
 
@@ -120,7 +120,7 @@ program
   .command('info')
   .description('Show system information and capabilities')
   .action(() => {
-    const { detectTerminalCapabilities } = require('@cli-trace/renderer-tty');
+    const { detectTerminalCapabilities } = require('cli-trace-renderer-tty');
 
     const caps = detectTerminalCapabilities();
 
@@ -163,8 +163,8 @@ function generateExportHTML(source: TraceSource, options: any): string {
   <canvas id="trace-canvas" width="${options.width}" height="${options.height}"></canvas>
 
   <script type="module">
-    import { CanvasRenderer } from 'https://unpkg.com/@cli-trace/renderer-web@0.1.0/dist/index.mjs';
-    import { createPathData } from 'https://unpkg.com/@cli-trace/parser-svg@0.1.0/dist/index.mjs';
+    import { CanvasRenderer } from 'https://unpkg.com/cli-trace-renderer-web@0.1.0/dist/index.mjs';
+    import { createPathData } from 'https://unpkg.com/cli-trace-parser-svg@0.1.0/dist/index.mjs';
 
     const canvas = document.getElementById('trace-canvas');
     const ctx = canvas.getContext('2d');
@@ -229,8 +229,8 @@ function generateHTMLSnippet(source: TraceSource, options: any): string {
   </div>
 
   <script type="module">
-    import { CanvasRenderer } from 'https://unpkg.com/@cli-trace/renderer-web@0.1.0/dist/index.mjs';
-    import { createPathData } from 'https://unpkg.com/@cli-trace/parser-svg@0.1.0/dist/index.mjs';
+    import { CanvasRenderer } from 'https://unpkg.com/cli-trace-renderer-web@0.1.0/dist/index.mjs';
+    import { createPathData } from 'https://unpkg.com/cli-trace-parser-svg@0.1.0/dist/index.mjs';
 
     const canvas = document.getElementById('trace-canvas');
     const renderer = new CanvasRenderer({

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Trace } from '@cli-trace/renderer-react';
-import { TraceSource } from '@cli-trace/core';
+import { Trace } from 'cli-trace-renderer-react';
+import { TraceSource } from 'cli-trace-core';
 import styled from 'styled-components';
 
 // Sample SVG paths for demo - using simple absolute coordinates
@@ -179,7 +179,7 @@ const App: React.FC = () => {
 
   const generateCodeExample = () => {
     if (renderer === 'svg') {
-      return `import { Trace } from '@cli-trace/renderer-react';
+      return `import { Trace } from 'cli-trace-renderer-react';
 
 <Trace
   source={{ svg: \`${SAMPLE_SVGS[selectedShape].replace(/`/g, '\\`')}\` }}
@@ -195,7 +195,7 @@ const App: React.FC = () => {
   autoPlay={${autoPlay}}
 />`;
     } else {
-      return `import { useTrace } from '@cli-trace/renderer-react';
+      return `import { useTrace } from 'cli-trace-renderer-react';
 
 const { progress, isPlaying, play, stop } = useTrace({
   source: { svg: \`${SAMPLE_SVGS[selectedShape].replace(/`/g, '\\`')}\` },

@@ -1,5 +1,5 @@
 {
-  "name": "@cli-trace/core",
+  "name": "cli-trace-core",
   "version": "1.0.0",
   "description": "Core utilities for CLI-Trace: Bézier curves, timeline, easing functions",
   "main": "dist/index.js",

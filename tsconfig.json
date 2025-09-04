@@ -17,14 +17,14 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@cli-trace/core": ["packages/core/src"],
-      "@cli-trace/renderer-web": ["packages/renderer-web/src"],
-      "@cli-trace/renderer-react": ["packages/renderer-react/src"],
-      "@cli-trace/renderer-tty": ["packages/renderer-tty/src"],
-      "@cli-trace/parser-svg": ["packages/parser-svg/src"],
-      "@cli-trace/vector-text": ["packages/vector-text/src"],
-      "@cli-trace/exporter": ["packages/exporter/src"],
-      "@cli-trace/presets": ["packages/presets/src"]
+      "cli-trace-core": ["packages/core/src"],
+      "cli-trace-renderer-web": ["packages/renderer-web/src"],
+      "cli-trace-renderer-react": ["packages/renderer-react/src"],
+      "cli-trace-renderer-tty": ["packages/renderer-tty/src"],
+      "cli-trace-parser-svg": ["packages/parser-svg/src"],
+      "cli-trace-vector-text": ["packages/vector-text/src"],
+      "cli-trace-exporter": ["packages/exporter/src"],
+      "cli-trace-presets": ["packages/presets/src"]
     }
   },
   "exclude": [

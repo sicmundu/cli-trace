@@ -1,5 +1,5 @@
 {
-  "name": "@cli-trace/renderer-react",
+  "name": "cli-trace-renderer-react",
   "version": "1.0.0",
   "description": "React components for CLI-Trace: animated stroke rendering",
   "main": "dist/index.js",
@@ -39,9 +39,9 @@
     "react-dom": ">=16.8.0"
   },
   "dependencies": {
-    "@cli-trace/core": "workspace:*",
-    "@cli-trace/renderer-web": "workspace:*",
-    "@cli-trace/parser-svg": "workspace:*"
+    "cli-trace-core": "workspace:*",
+    "cli-trace-renderer-web": "workspace:*",
+    "cli-trace-parser-svg": "workspace:*"
   },
   "devDependencies": {
     "@types/react": "^18.0.0",

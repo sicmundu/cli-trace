@@ -21,7 +21,7 @@ Animated stroke tracing for web and terminal. Create beautiful SVG animations wi
 ### Web (Vanilla JavaScript)
 
 ```javascript
-import { createSvgTracer } from '@cli-trace/renderer-web';
+import { createSvgTracer } from 'cli-trace-renderer-web';
 
 const tracer = createSvgTracer('#container', {
   durationMs: 2000,
@@ -34,7 +34,7 @@ tracer.loadSVG('<svg>...</svg>');
 ### React
 
 ```tsx
-import { Trace } from '@cli-trace/renderer-react';
+import { Trace } from 'cli-trace-renderer-react';
 
 <Trace
   source={{ svg: svgString }}
@@ -48,7 +48,7 @@ import { Trace } from '@cli-trace/renderer-react';
 
 ```bash
 # Install CLI
-npm install -g @cli-trace/cli
+npm install -g cli-trace-cli
 
 # Live animation
 cli-trace live --svg logo.svg --duration 2000 --loop
@@ -61,13 +61,13 @@ cli-trace html --svg logo.svg --out animation.html
 
 This monorepo contains several packages:
 
-- **`@cli-trace/core`** - Core utilities and types
-- **`@cli-trace/parser-svg`** - SVG parsing and path normalization
-- **`@cli-trace/renderer-web`** - Web renderers (SVG/Canvas)
-- **`@cli-trace/renderer-react`** - React components and hooks
-- **`@cli-trace/renderer-tty`** - Terminal renderer with Braille/ANSI
-- **`@cli-trace/cli`** - Command-line interface
-- **`@cli-trace/demo-site`** - Interactive playground
+- **`cli-trace-core`** - Core utilities and types
+- **`cli-trace-parser-svg`** - SVG parsing and path normalization
+- **`cli-trace-renderer-web`** - Web renderers (SVG/Canvas)
+- **`cli-trace-renderer-react`** - React components and hooks
+- **`cli-trace-renderer-tty`** - Terminal renderer with Braille/ANSI
+- **`cli-trace-cli`** - Command-line interface
+- **`cli-trace-demo-site`** - Interactive playground
 
 ## Installation
 
@@ -87,7 +87,7 @@ cd apps/demo-site && pnpm run dev
 ### Basic SVG Animation
 
 ```javascript
-import { SVGRenderer } from '@cli-trace/renderer-web';
+import { SVGRenderer } from 'cli-trace-renderer-web';
 
 const renderer = new SVGRenderer({
   container: document.getElementById('animation'),
@@ -103,7 +103,7 @@ await renderer.animate(2000);
 ### Terminal Animation
 
 ```javascript
-import { ttyTrace } from '@cli-trace/renderer-tty';
+import { ttyTrace } from 'cli-trace-renderer-tty';
 
 await ttyTrace(
   { svg: svgContent },
@@ -114,7 +114,7 @@ await ttyTrace(
 ### React Hook
 
 ```tsx
-import { useTrace } from '@cli-trace/renderer-react';
+import { useTrace } from 'cli-trace-renderer-react';
 
 function AnimatedLogo() {
   const { progress, isPlaying, play, stop } = useTrace({
@@ -198,7 +198,7 @@ Supported terminals:
 ### Easing Functions
 
 ```javascript
-import { easings } from '@cli-trace/core';
+import { easings } from 'cli-trace-core';
 
 const customEasing = [0.25, 0.1, 0.25, 1]; // Cubic bezier
 ```
@@ -226,10 +226,10 @@ pnpm run build
 pnpm run test
 
 # Start demo site
-pnpm --filter @cli-trace/demo-site run dev
+pnpm --filter cli-trace-demo-site run dev
 
 # Build CLI
-pnpm --filter @cli-trace/cli run build
+pnpm --filter cli-trace-cli run build
 ```
 
 ## Roadmap

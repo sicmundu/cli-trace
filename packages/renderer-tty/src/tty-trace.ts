@@ -4,7 +4,7 @@
  * Convenient function for rendering SVG traces in terminal
  */
 
-import { TraceSource, TraceOptions } from '@cli-trace/core';
+import { TraceSource, TraceOptions } from 'cli-trace-core';
 import { TTYRenderer, TTYRendererOptions } from './tty-renderer.js';
 
 /**

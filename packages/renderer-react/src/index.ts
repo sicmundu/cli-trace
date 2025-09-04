@@ -18,10 +18,10 @@ export type {
   TraceOptions,
   Point,
   PathData,
-} from '@cli-trace/core';
+} from 'cli-trace-core';
 
 // Re-export parser utilities for convenience
 export {
   parseSVG,
   createPathData,
-} from '@cli-trace/parser-svg';
+} from 'cli-trace-parser-svg';

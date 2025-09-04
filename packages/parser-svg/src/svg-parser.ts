@@ -4,7 +4,7 @@
  * Extracts path data from SVG strings and converts to PathData objects
  */
 
-import { PathData } from '@cli-trace/core';
+import { PathData } from 'cli-trace-core';
 import { createPathData } from './parser.js';
 
 /**

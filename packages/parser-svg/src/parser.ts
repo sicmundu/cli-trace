@@ -4,7 +4,7 @@
  * Parses SVG path data strings and converts them to normalized path segments
  */
 
-import { Point, PathSegment, PathData, CubicBezierCurve, QuadraticBezierCurve } from '@cli-trace/core';
+import { Point, PathSegment, PathData, CubicBezierCurve, QuadraticBezierCurve } from 'cli-trace-core';
 
 /**
  * Parse SVG path data string into path segments

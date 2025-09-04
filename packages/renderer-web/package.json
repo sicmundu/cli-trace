@@ -1,5 +1,5 @@
 {
-  "name": "@cli-trace/renderer-web",
+  "name": "cli-trace-renderer-web",
   "version": "1.0.0",
   "description": "Web renderer for CLI-Trace: SVG and Canvas animation rendering",
   "main": "dist/index.js",
@@ -36,8 +36,8 @@
   "author": "Grisha",
   "license": "MIT",
   "dependencies": {
-    "@cli-trace/core": "workspace:*",
-    "@cli-trace/parser-svg": "workspace:*"
+    "cli-trace-core": "workspace:*",
+    "cli-trace-parser-svg": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

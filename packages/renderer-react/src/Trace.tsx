@@ -10,9 +10,9 @@ import {
   TraceOptions,
   PathData,
   applyEasing
-} from '@cli-trace/core';
-import { createPathData } from '@cli-trace/parser-svg';
-import { SVGRenderer, CanvasRenderer } from '@cli-trace/renderer-web';
+} from 'cli-trace-core';
+import { createPathData } from 'cli-trace-parser-svg';
+import { SVGRenderer, CanvasRenderer } from 'cli-trace-renderer-web';
 
 export interface TraceProps {
   /** Source data for the trace */

@@ -1,5 +1,5 @@
 {
-  "name": "@cli-trace/parser-svg",
+  "name": "cli-trace-parser-svg",
   "version": "1.0.0",
   "description": "SVG path parsing and normalization for CLI-Trace",
   "main": "dist/index.js",
@@ -35,7 +35,7 @@
   "author": "Grisha",
   "license": "MIT",
   "dependencies": {
-    "@cli-trace/core": "workspace:*"
+    "cli-trace-core": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

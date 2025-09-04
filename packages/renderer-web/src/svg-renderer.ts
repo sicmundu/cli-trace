@@ -12,8 +12,8 @@ import {
   PathSegment,
   Point,
   BezierCurve
-} from '@cli-trace/core';
-import { createPathData } from '@cli-trace/parser-svg';
+} from 'cli-trace-core';
+import { createPathData } from 'cli-trace-parser-svg';
 
 export interface SVGRendererOptions {
   container?: HTMLElement | string;

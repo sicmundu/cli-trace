@@ -14,7 +14,7 @@ import {
   BezierCurve,
   cubicBezierPoint,
   quadraticBezierPoint
-} from '@cli-trace/core';
+} from 'cli-trace-core';
 
 export interface CanvasRendererOptions {
   container?: HTMLElement | string;

@@ -1,5 +1,5 @@
 {
-  "name": "@cli-trace/renderer-tty",
+  "name": "cli-trace-renderer-tty",
   "version": "1.0.0",
   "description": "TTY renderer for CLI-Trace: ANSI and Braille terminal animations",
   "main": "dist/index.js",
@@ -36,8 +36,8 @@
   "author": "Grisha",
   "license": "MIT",
   "dependencies": {
-    "@cli-trace/core": "workspace:*",
-    "@cli-trace/parser-svg": "workspace:*"
+    "cli-trace-core": "workspace:*",
+    "cli-trace-parser-svg": "workspace:*"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
