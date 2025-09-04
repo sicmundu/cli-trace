@@ -262,6 +262,10 @@ Use GitHub Issues to report bugs or request features. Include:
 - Steps to reproduce
 - Expected vs actual behavior
 
+## Repository
+
+[GitHub Repository](https://github.com/sicmundu/cli-trace)
+
 ## License
 
 MIT

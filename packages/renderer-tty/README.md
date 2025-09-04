@@ -236,6 +236,10 @@ This package requires:
 - Windows Terminal
 - Most SSH clients
 
+## Repository
+
+[GitHub Repository](https://github.com/sicmundu/cli-trace)
+
 ## License
 
 MIT

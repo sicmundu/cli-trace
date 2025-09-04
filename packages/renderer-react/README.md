@@ -205,6 +205,10 @@ Same as `cli-trace-renderer-web`:
 - Safari 12+
 - Edge 79+
 
+## Repository
+
+[GitHub Repository](https://github.com/sicmundu/cli-trace)
+
 ## License
 
 MIT

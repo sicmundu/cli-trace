@@ -6,6 +6,42 @@ Animated stroke tracing for web and terminal. Create beautiful SVG animations wi
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 
+## Installation
+
+CLI-Trace is available on npm. Choose the package that fits your needs:
+
+### Core Package
+```bash
+npm install cli-trace-core
+```
+
+### Web Rendering
+```bash
+npm install cli-trace-renderer-web
+```
+
+### React Components
+```bash
+npm install cli-trace-renderer-react
+```
+
+### Terminal Rendering
+```bash
+npm install cli-trace-renderer-tty
+```
+
+### CLI Application
+```bash
+npm install -g cli-trace-cli
+```
+
+### Complete Monorepo
+```bash
+git clone https://github.com/sicmundu/cli-trace.git
+cd cli-trace
+npm install
+```
+
 ## Features
 
 - SVG Stroke Animation - Beautiful animated path tracing

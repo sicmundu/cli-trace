@@ -82,6 +82,10 @@ const value = timeline.getValueAt(500);
 - `QuadraticBezierCurve` - Quadratic Bézier curve definition
 - `EasingFunction` - Function that takes progress (0-1) and returns eased value
 
+## Repository
+
+[GitHub Repository](https://github.com/sicmundu/cli-trace)
+
 ## License
 
 MIT

@@ -138,6 +138,10 @@ await renderer.animate(2000, (progress) => {
 });
 ```
 
+## Repository
+
+[GitHub Repository](https://github.com/sicmundu/cli-trace)
+
 ## License
 
 MIT

@@ -96,6 +96,10 @@ pathData.segments.forEach(segment => {
 
 This package requires `cli-trace-core` for Bézier curve calculations.
 
+## Repository
+
+[GitHub Repository](https://github.com/sicmundu/cli-trace)
+
 ## License
 
 MIT

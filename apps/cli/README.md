@@ -213,6 +213,10 @@ This package requires:
 
 Found a bug or want to contribute? See the main CLI-Trace repository for contribution guidelines.
 
+## Repository
+
+[GitHub Repository](https://github.com/sicmundu/cli-trace)
+
 ## License
 
 MIT
