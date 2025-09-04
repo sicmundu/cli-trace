@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CLI-Trace Animation</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      text-align: center;
+    }
+    canvas {
+      border: 1px solid #ccc;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>CLI-Trace Animation</h2>
+    <canvas id="trace-canvas" width="800" height="600"></canvas>
+    <p>Duration: 3000ms</p>
+  </div>
+
+  <script type="module">
+    import { CanvasRenderer } from 'https://unpkg.com/@cli-trace/renderer-web@0.1.0/dist/index.mjs';
+    import { createPathData } from 'https://unpkg.com/@cli-trace/parser-svg@0.1.0/dist/index.mjs';
+
+    const canvas = document.getElementById('trace-canvas');
+    const renderer = new CanvasRenderer({
+      container: canvas,
+      width: 800,
+      height: 600,
+      background: '#ffffff',
+      strokeColor: '#000000',
+    });
+
+    // Load and animate
+    
+    renderer.loadSVG(`<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 10l12.5 31.5h32.5l-26.5 19 10 31.5L50 72.5l-28.5 19 10-31.5-26.5-19h32.5z" fill="none" stroke="#ff6b35" stroke-width="3"/>
+</svg>
+`);
+    
+
+    renderer.animate(3000, (t) => t, (progress) => {
+      // Update progress display
+      document.querySelector('p').textContent = `Progress: ${(progress * 100).toFixed(1)}%`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+{
+  "name": "@cli-trace/renderer-react",
+  "version": "1.0.0",
+  "description": "React components for CLI-Trace: animated stroke rendering",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "vitest",
+    "lint": "eslint src --ext .ts,.tsx",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "react",
+    "svg",
+    "animation",
+    "stroke",
+    "tracing"
+  ],
+  "author": "Grisha",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "dependencies": {
+    "@cli-trace/core": "workspace:*",
+    "@cli-trace/renderer-web": "workspace:*",
+    "@cli-trace/parser-svg": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/node": "^20.0.0",
+    "tsup": "^7.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^0.34.0"
+  }
+}

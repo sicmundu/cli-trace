@@ -1,0 +1,42 @@
+{
+  "name": "@cli-trace/cli",
+  "version": "1.0.0",
+  "description": "CLI-Trace command line interface",
+  "main": "dist/index.js",
+  "bin": {
+    "cli-trace": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs --dts",
+    "dev": "tsup src/index.ts --format cjs --dts --watch",
+    "test": "vitest",
+    "lint": "eslint src --ext .ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "cli",
+    "terminal",
+    "svg",
+    "animation",
+    "stroke"
+  ],
+  "author": "Grisha",
+  "license": "MIT",
+  "dependencies": {
+    "@cli-trace/core": "workspace:*",
+    "@cli-trace/parser-svg": "workspace:*",
+    "@cli-trace/renderer-tty": "workspace:*",
+    "@cli-trace/renderer-web": "workspace:*",
+    "commander": "^11.0.0",
+    "chalk": "^5.0.0",
+    "fs-extra": "^11.0.0",
+    "glob": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/fs-extra": "^11.0.0",
+    "tsup": "^7.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^0.34.0"
+  }
+}

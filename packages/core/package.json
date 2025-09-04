@@ -1,0 +1,41 @@
+{
+  "name": "@cli-trace/core",
+  "version": "1.0.0",
+  "description": "Core utilities for CLI-Trace: Bézier curves, timeline, easing functions",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "vitest",
+    "lint": "eslint src --ext .ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "bezier",
+    "curves",
+    "animation",
+    "easing",
+    "timeline"
+  ],
+  "author": "Grisha",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^7.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^0.34.0"
+  }
+}

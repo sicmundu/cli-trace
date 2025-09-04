@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@cli-trace/core": ["packages/core/src"],
+      "@cli-trace/renderer-web": ["packages/renderer-web/src"],
+      "@cli-trace/renderer-react": ["packages/renderer-react/src"],
+      "@cli-trace/renderer-tty": ["packages/renderer-tty/src"],
+      "@cli-trace/parser-svg": ["packages/parser-svg/src"],
+      "@cli-trace/vector-text": ["packages/vector-text/src"],
+      "@cli-trace/exporter": ["packages/exporter/src"],
+      "@cli-trace/presets": ["packages/presets/src"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ]
+}

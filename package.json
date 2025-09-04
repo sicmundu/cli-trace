@@ -1,0 +1,39 @@
+{
+  "name": "cli-trace-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Animated stroke tracing for web and terminal",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm -r run dev",
+    "test": "pnpm -r run test",
+    "lint": "pnpm -r run lint",
+    "clean": "pnpm -r run clean",
+    "export:sample": "pnpm -r run export:sample"
+  },
+  "keywords": [
+    "svg",
+    "animation",
+    "terminal",
+    "tracing",
+    "stroke",
+    "cli"
+  ],
+  "author": "Grisha",
+  "license": "MIT",
+  "devDependencies": {
+    "turbo": "^1.10.0",
+    "typescript": "^5.0.0",
+    "eslint": "^8.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
