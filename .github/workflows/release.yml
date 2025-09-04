@@ -35,6 +35,13 @@ jobs:
           git checkout main || git checkout master
           git status
 
+      - name: Setup npm authentication
+        run: |
+          npm config set //registry.npmjs.org/:_authToken ${NODE_AUTH_TOKEN}
+          npm whoami
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
       - name: Publish packages
         run: pnpm -r publish --access public --no-git-checks
         env:
